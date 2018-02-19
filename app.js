@@ -95,7 +95,7 @@ if(hours >= 12 && hours < 18 ) {
   $('.greeting').append("Good Afternoon");
 }
 
-if(hours >= 18 && hours < 22 ) {
+if(hours >= 18 && hours < 24 ) {
   $('.greeting').append("Good Evening");
 }
 
