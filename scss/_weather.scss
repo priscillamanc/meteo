@@ -1,0 +1,118 @@
+
+  h1 {
+    text-align: center;
+    margin-top: $spacer3;
+    font-family: 'Amatic SC', cursive;
+    font-size: $font_size4;
+    color: white;
+
+  }
+
+  h2 {
+    margin-bottom: $spacer1;
+    text-align: center;
+    margin-top: $spacer1;
+    font-family: 'Amatic SC', cursive;
+    font-size: $font_size3;
+    color: white;
+  }
+
+  > .condition { // today condition
+    .icon i.wi {
+      font-size: $font_size1;
+
+    }
+  }
+
+  .condition { // generic condition
+    @include debug;
+    .content {
+      @include centered;
+      @include debug;
+      @include clearfix;
+      margin-bottom: $spacer1;
+
+      font-family: 'Open Sans', sans-serif;
+      .value{
+        @include centered;
+        color: $color1;
+        display: inline;
+        font-size: $font_size2;
+        font-family: 'Open Sans', sans-serif;
+
+
+      }
+      label{
+        display: inline;
+        color: $color2;
+      }
+      .icon label, .city label, .date label {
+        display: none;
+      }
+      .date .value{
+        font-size: $font_size1;
+        font-weight: bold;
+        color: $color1;
+        font-family: 'Open Sans', sans-serif;
+
+      }
+
+      .city .value {
+        margin-bottom: $spacer1;
+        margin-top: $spacer3;
+        font-family: 'Cookie', cursive;
+        font-size: $font_size4;
+
+
+      }
+    }
+    .icon {
+      margin-bottom: $spacer2;
+      label {
+        display: none;
+      }
+      i.wi {
+        color: $color1;
+        font-size: 3.5em;
+      }
+    }
+  }
+
+  & .row > .condition { // 1st condition
+    .icon{
+     i.wi {
+       font-size: 8em;
+     }
+    }
+  }
+
+  button {
+    margin-top: 20px;
+    @include centered;
+    @include border-radius(20px);
+    color: $color1;
+      border: 2px solid white;
+      background-color: Transparent;
+      padding: 6px 20px 6px 20px;
+  }
+
+  .informazioni{
+    margin-top: $spacer1;
+  }
+
+  #forecast {
+    @include centered;
+    padding-top: $spacer3;
+    color: $color1;
+    label {
+      display: none;
+
+    }
+    .city, .wind, .clouds, .temp, .humidity,  {
+      display: none;
+    }
+    button {
+      display: none;
+    }
+
+}

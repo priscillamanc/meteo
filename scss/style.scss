@@ -1,0 +1,19 @@
+$is_debug: false;
+
+$spacer1: 20px;
+$spacer2: 35px;
+$spacer3: 60px;
+
+$font_size1: 16px;
+$font_size2: 20px;
+$font_size3: 40px;
+$font_size4: 50px;
+
+//$color1: #BCD975;
+$color1: #fff;
+$color2: #f2f2f2;
+
+@import 'mixin';
+@import 'layout';
+@import 'weather';
+@import 'background';

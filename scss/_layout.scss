@@ -1,0 +1,25 @@
+html, body {
+  height: 100%;
+  width:100%;
+  background-color: $color1;
+  background: no-repeat center center fixed;
+  background-size: cover;
+  overflow-x: hidden;
+
+}
+
+#weather {
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 20px;
+}
+
+
+.debug {
+  @include debug;
+}
+
+section {
+  display: none;
+  height: 100%;
+  @include debug;
+}
